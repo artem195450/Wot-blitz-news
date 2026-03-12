@@ -3,187 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новини World of Tanks Blitz</title>
+    <title>WoT Blitz — Головна</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #1a1a1a;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .btn-play {
-            display: inline-block;
-            background: #ff8c00;
-            color: #fff;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-        .btn-play:hover {
-            background: #e67e00;
-        }
-        /* Стиль для кнопки Discord */
-        .btn-discord {
-            display: inline-block;
-            background: #5865F2;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 15px;
-            transition: background 0.3s;
-        }
-        .btn-discord:hover {
-            background: #4752c4;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-            background: #fff;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #d32f2f;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .card {
-            background: #fafafa;
-            padding: 20px;
-            border-left: 4px solid #d32f2f;
-        }
-        .card h3 {
-            margin-top: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.8em;
-            color: #777;
-        }
+        /* Використовуємо той самий стиль для гармонії */
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; margin: 0; background-color: #f4f4f4; }
+        header { background: #1a1a1a; color: #fff; padding: 60px 20px; text-align: center; border-bottom: 5px solid #ff8c00; }
+        .btn-main { display: inline-block; background: #ff8c00; color: #fff; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; margin: 10px; transition: 0.3s; }
+        .btn-secondary { display: inline-block; background: #444; color: #fff; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; margin: 10px; transition: 0.3s; }
+        .btn-main:hover { background: #e67e00; }
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; background: #fff; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h2 { color: #d32f2f; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .news-card { border-left: 4px solid #ff8c00; padding: 15px; background: #fafafa; margin-bottom: 15px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Новини World of Tanks Blitz: Останні Оновлення</h1>
-    <p>Вітаємо у вашому офіційному джерелі інформації про найпопулярнішу мобільну танкову гру!</p>
-    <a href="https://eu.wotblitz.com/uk/" class="btn-play">Відкрити гру (ГРАТИ)</a>
+    <h1>World of Tanks Blitz</h1>
+    <p>Танкові битви 7 на 7 у твоєму смартфоні!</p>
+    <a href="https://eu.wotblitz.com/uk/" class="btn-main">ГРАТИ БЕЗКОШТОВНО</a>
+    <a href="about.html" class="btn-secondary">ПРО ГРУ ТА ГАЙДИ</a>
 </header>
 
-<section id="updates">
-    <h2>Свіжі патчі та зміни</h2>
-    <p>Від візуальних покращень до повної переробки механік боя.</p>
-    <div class="grid">
-        <div class="card">
-            <h3>Візуальне оновлення</h3>
-            <p>Нові текстури, ефекти пострілів та вибухів для більш реалістичного бою.</p>
-        </div>
-        <div class="card">
-            <h3>Оптимізація</h3>
-            <p>Покращена продуктивність на всіх пристроях та знижене енергоспоживання.</p>
-        </div>
-        <div class="card">
-            <h3>Баг-фікси</h3>
-            <p>Виправлення критичних помилок та стабілізація серверів.</p>
-        </div>
+<section id="latest-news">
+    <h2>Останні новини</h2>
+    
+    <div class="news-card">
+        <h3>🚀 Новий сезон уже тут!</h3>
+        <p>Приєднуйтесь до битви в новому сезоні з унікальними нагородами та новими бойовими завданнями.</p>
+        <small>12 Березня, 2026</small>
     </div>
-</section>
 
-<section id="events">
-    <h2>Анонси подій та акцій</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Спеціальні місії</h3>
-            <p>Обмежені події з унікальними нагородами та рідкісними призами.</p>
-        </div>
-        <div class="card">
-            <h3>Вікендові турніри</h3>
-            <p>Вихідні зі збільшеними нагородами та спеціальними умовами бою.</p>
-        </div>
-        <div class="card">
-            <h3>Сезонні події</h3>
-            <p>Тематичні заходи, присвячені святам та історичним датам.</p>
-        </div>
-    </div>
-</section>
-<section id="tanks">
-    <h2>Огляд нових танків</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Важкі танки</h3>
-            <p>Непробивна броня та потужна артилерія для контролю центру карти.</p>
-        </div>
-        <div class="card">
-            <h3>Середні танки</h3>
-            <p>Баланс швидкості, броні та вогневої потужності.</p>
-        </div>
-        <div class="card">
-            <h3>Легкі танки</h3>
-            <p>Висока швидкість та маскування для розвідки.</p>
-        </div>
-    </div>
-</section>
-
-<section id="balance">
-    <h2>Балансні правки</h2>
-    <p>Розробники постійно аналізують статистику для створення рівних умов.</p>
-    <ul>
-        <li><strong>Життєздатність:</strong> Корекція HP та бронювання.</li>
-        <li><strong>Вогнева потужність:</strong> Зміна урону, швидкострільності та точності.</li>
-        <li><strong>Маневреність:</strong> Регулювання швидкості руху та обертання.</li>
-    </ul>
-</section>
-
-<section id="guides">
-    <h2>Гайди та поради</h2>
-    <div class="grid">
-        <div class="card"><h3>01. Вивчіть карту</h3><p>Знання рельєфу — основа перемоги.</p></div>
-        <div class="card"><h3>02. Оберіть танк</h3><p>Правильний вибір під вашу тактику.</p></div>
-        <div class="card"><h3>03. Працюйте в команді</h3><p>Координація вирішує вихід бою.</p></div>
-    </div>
-</section>
-
-<section id="community">
-    <h2>Спільнота та Зворотний зв'язок</h2>
-    <p>Приєднуйтесь до обговорень у Discord, Telegram та на Форумі.</p>
-    <div class="grid">
-        <div class="card">
-            <h3>Офіційний Discord</h3>
-            <p>Прямий зв'язок з розробниками та швидка допомога.</p>
-            <a href="https://discord.gg/wotblitz" target="_blank" class="btn-discord">Приєднатися до Discord</a>
-        </div>
-        <div class="card">
-            <h3>In-game зв'язок</h3>
-            <p>Швидкий доступ до служби підтримки прямо з ігрового меню.</p>
-        </div>
+    <div class="news-card">
+        <h3>🛠 Технічні роботи завершено</h3>
+        <p>Сервери знову доступні. Оновлено систему стабілізації та виправлено помилки входу.</p>
+        <small>10 Березня, 2026</small>
     </div>
 </section>
 
 <footer>
-    <p>Контент створено на основі презентації "World of Tanks Blitz Новини". Made for Fans.</p>
+    <p style="text-align: center; color: #777;">&copy; 2026 WoT Blitz Fan Page</p>
 </footer>
 
 </body>
-
 </html>
